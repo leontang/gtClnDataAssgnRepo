@@ -1,10 +1,19 @@
 ## Read Me
 ## -------
-## 
-## 
-## 
-## 
-## 
+## 1. Merges the training and the test sets to create one 
+##    data set. Files include "subject_text.txt", 
+##    "subject_train.txt", "X_test.txt", "X_train.txt", 
+##    "y_test.txt"and "y_train.txt".
+## 2. Extracts only the measurements on the mean and 
+##    standard deviation for each measurement. 
+## 3. Uses descriptive activity names to name the activities 
+##    in the data set i.e. WALKING, WALKING_UPSTAIRS, 
+##    WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+## 4. Appropriately labels the data set with descriptive 
+##    variable names. 
+## 5. From the data set in step 4, creates a second, 
+##    independent tidy data set with the average of each 
+##    variable for each activity and each subject.
 ## 
 ## 
 ## Assumumptions
@@ -299,8 +308,8 @@ run_analysis <- function(name) {
                  , "frequency.Body.Body.Gyro.Mag.std"
                  , "frequency.Body.Body.Gyro.Jerk.Mag.mean")
     
-    ## write the cleaned up data into the file "final_data.csv"
+    ## write the cleaned up data into the file "final_data.txt"
     
-    write.table(final_data_summarized, file="final_data.csv"
+    write.table(final_data_summarized, file="final_data.txt"
                 , row.names=FALSE, na="", sep=",")
 }
