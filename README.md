@@ -1,21 +1,21 @@
 ## This is the repository for the assignment in getting and cleaning data module
 
 The R script "run_analysis.R" does the following:
-1. Merges the training and the test sets to create one data set. Files include "subject_text.txt", "subject_train.txt", "X_test.txt", "X_train.txt", "y_test.txt"and "y_train.txt".
-2. Extracts only the measurements on the mean and standard deviation for each measurement. 
-3. Uses descriptive activity names to name the activities in the data set i.e. WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-4. Appropriately labels the data set with descriptive variable names. 
-5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+- Merges the training and the test sets to create one data set. Files include "subject_text.txt", "subject_train.txt", "X_test.txt", "X_train.txt", "y_test.txt"and "y_train.txt".
+- Extracts only the measurements on the mean and standard deviation for each measurement. 
+- Uses descriptive activity names to name the activities in the data set i.e. WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+- Appropriately labels the data set with descriptive variable names. 
+- From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 The R script generates an output file "final_data.txt"
 
 For more information on the variables in the output file, refer to the code book.pdf in the same repository
 
 
-Assumumptions
+Assumptions
 =============
-1. "dplyr" package is installed and loaded before run_analysis() function is called
-2. The data files "subject_text.txt", "subject_train.txt", "X_test.txt", "X_train.txt", "y_test.txt"and "y_train.txt" are in the same folder as this script
+- "dplyr" package is installed and loaded before run_analysis() function is called
+- The data files "subject_text.txt", "subject_train.txt", "X_test.txt", "X_train.txt", "y_test.txt"and "y_train.txt" are in the same folder as this script
 
 
 Acknowledgement
